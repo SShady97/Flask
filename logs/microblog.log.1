@@ -1,0 +1,86 @@
+2020-08-14 19:55:50,819 ERROR: Exception on /auth/login [GET] [in c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\auth\routes.py", line 29, in login
+    return render_template('auth/login.html', title='Sign In', form=form)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\auth\login.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\base.html", line 58, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\auth\login.html", line 12, in block "app_content"
+    <p>{{ _('New User?') }} <a href="{{ url_for('auth.register') }}"> Click to Register!</a></p>
+jinja2.exceptions.UndefinedError: '_' is undefined
+2020-08-14 19:55:54,559 ERROR: Exception on /auth/login [GET] [in c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\auth\routes.py", line 29, in login
+    return render_template('auth/login.html', title='Sign In', form=form)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\auth\login.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\base.html", line 58, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\auth\login.html", line 12, in block "app_content"
+    <p>{{ _('New User?') }} <a href="{{ url_for('auth.register') }}"> Click to Register!</a></p>
+jinja2.exceptions.UndefinedError: '_' is undefined

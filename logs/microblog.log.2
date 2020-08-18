@@ -1,0 +1,95 @@
+2020-08-14 19:53:32,315 ERROR: Exception on /edit_profile [GET] [in c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\main\routes.py", line 66, in edit_profile
+    return render_template('edit_profile.html', title='Edit Profile', form=form)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\edit_profile.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\base.html", line 58, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\edit_profile.html", line 7, in block "app_content"
+    {{ wtf.quick_form(form) }}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'wtf' is undefined
+2020-08-14 19:54:45,569 ERROR: Exception on /edit_profile [GET] [in c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\main\routes.py", line 66, in edit_profile
+    return render_template('edit_profile.html', title='Edit Profile', form=form)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\edit_profile.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\base.html", line 58, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Jose\Desktop\Curso FLASK\microblog\app\templates\edit_profile.html", line 7, in block "app_content"
+    <div class="col-md-4">
+  File "c:\users\jose\desktop\curso flask\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'wtf' is undefined
+2020-08-14 19:54:52,524 INFO: Microblog startup [in C:\Users\Jose\Desktop\Curso FLASK\microblog\app\__init__.py:70]
